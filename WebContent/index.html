@@ -1,0 +1,20 @@
+<html>
+   <title>The Hello, World Applet</title>
+   <hr>
+   <!-- Alternative method to deploy https://stackoverflow.com/questions/15591699/applet-not-working-on-html
+    
+	   <applet code = "com.temp.HelloWorldApplet.class" archive="AppletTutorial.jar" width = "320" height = "120">
+	      If your browser was Java-enabled, a "Hello, World"
+	      message would appear here.
+	   </applet>
+	   
+   -->
+   
+   <script src="http://www.java.com/js/deployJava.js"></script>
+	<script>
+	    var attributes = {code:'com.temp.HelloWorldApplet.class', archive:'AppletTutorial.jar', width: 320, height: 120}; 
+	    var parameters = {boxbgcolor: 'white', boxborder: 'false', centerimage: 'true'}; 
+	    deployJava.runApplet(attributes, parameters, '1.6'); 
+	</script>
+   <hr>
+</html>
